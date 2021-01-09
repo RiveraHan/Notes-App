@@ -1,3 +1,15 @@
+
+{{#if error}}
+  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    {{error}}
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+{{/if}}
+
+{{!-- Alert de bootstrap. Este muestra errores de que cometan los usuarios al ingresar datos en los formularios --}}
+
 {{#each errors }}
 <div class="alert alert-danger alert-dismissible fade show" role="alert">
     {{text}}
