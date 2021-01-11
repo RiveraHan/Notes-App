@@ -1,6 +1,9 @@
 const mongoose = require('mongoose');
+const { NOTES_APP_MONGODB_HOST, NOTES_APP_MONGODB_DATBASE } = process.env;
 
-mongoose.connect('mongodb://localhost/notes-db-app', {
+const MONGODB_URI = `mongodb://${NOTES_APP_MONGODB_HOST}/${NOTES_APP_MONGODB_DATBASE}`;
+
+mongoose.connect(MONGODB_URI, {
         useCreateIndex: true,
         useNewUrlParser: true,
         useFindAndModify: false,

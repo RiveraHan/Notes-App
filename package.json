@@ -4,6 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "start": "node src/index.js",
         "dev": "nodemon src/index.js"
     },
     "keywords": [],
@@ -21,6 +22,9 @@
         "passport-local": "^1.0.0"
     },
     "devDependencies": {
-        "nodemon": "^2.0.4"
+        "dotenv": "^8.2.0",
+        "handlebars": "^4.7.6",
+        "nodemon": "^2.0.4",
+        "npm-check-updates": "^10.2.5"
     }
 }
