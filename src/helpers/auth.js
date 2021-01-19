@@ -1,10 +1,14 @@
-const helpers = {};
+const helpers = {
 
-helpers.isAuthenticated = (req, res, next) => {
-    if (req.isAuthenticated()) return next();
+    isAuthenticated: (req, res, next) => {
+        if (req.isAuthenticated()) {
 
-    req.flash('error_msg', 'No Authorized');
-    res.redirect('/users/signin');
+            return next();
+        }
+
+        req.flash('error_msg', 'No Authorized');
+        res.redirect('/users/signin');
+    }
 }
 
 module.exports = helpers;
