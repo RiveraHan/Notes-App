@@ -10,11 +10,25 @@ body {
 }
 
 .logo {
-    width: 50%;
+    width: 35%;
 }
 
 footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+@media (min-width: 360px) and (max-width: 800px) {
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+     ::-webkit-scrollbar {
+        display: none;
+    }
+    body {
+        overflow-x: hidden;
+    }
 }
