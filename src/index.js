@@ -2,7 +2,9 @@
  * Fichero principal o main
  */
 
-require('dotenv').config();
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config()
+}
 const app = require('./server');
 
 require('./database');
