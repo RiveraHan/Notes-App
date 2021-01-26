@@ -14,21 +14,28 @@ body {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    bottom: 0px;
     width: 100%;
 }
 
+#more {
+    position: fixed;
+    z-index: 10;
+    top: 80%;
+    right: 100px;
+    border-radius: 80px;
+    filter: drop-shadow(5px 5px 15px rgb(110, 89, 4));
+}
+
 @media (min-width: 360px) and (max-width: 800px) {
-    footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-    }
      ::-webkit-scrollbar {
         display: none;
     }
     body {
         overflow-x: hidden;
+    }
+    #more {
+        right: 10px;
     }
 }
