@@ -28,7 +28,7 @@ footer {
     filter: drop-shadow(5px 5px 15px rgb(110, 89, 4));
 }
 
-@media (min-width: 360px) and (max-width: 800px) {
+@media (min-width: 200px) and (max-width: 800px) {
      ::-webkit-scrollbar {
         display: none;
     }
