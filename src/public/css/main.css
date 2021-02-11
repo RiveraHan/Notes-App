@@ -24,11 +24,9 @@ footer {
     z-index: 10;
     top: 80%;
     right: 100px;
-    border-radius: 80px;
-    filter: drop-shadow(5px 5px 15px rgb(110, 89, 4));
 }
 
-@media (min-width: 200px) and (max-width: 800px) {
+@media (min-width: 200px) and (max-width: 800px)  {
      ::-webkit-scrollbar {
         display: none;
     }
